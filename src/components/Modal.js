@@ -1,27 +1,12 @@
-import React from 'react';
-
-const Modal = ({ show, onClose, children }) => {
-    if (!show) {
-        return null;
-    }
-
-    return (
-        <div className='modal-container'>
-        <div className="model-overlay">
+import React from "react"
 
 
-            <div className="modal-header">
-                <button className="model-close" onClick={onClose}>
-                    {/* <span>&times;</span> */}
-                    close
-                </button>
-            </div>
-            <div className="modal-body">{children}</div>
+const Modal = ({ setOnClose }) => {
 
-
-        </div>
-        </div>
-    );
-};
+    <div className="model-overlay">
+        <button className="model-close" onClick={() => setOnClose(false)}>Close</button>
+        <p className="modal">This is the content of the modal</p>
+    </div>
+}
 
 export default Modal;
