@@ -1,1 +1,19 @@
 
+
+.model-overlay{
+    width: 300px;
+    margin-top:20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: powderblue;
+}
+.model-close{
+    background: red;
+    color: white;
+    width: 90px;
+    height: 30px;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    
+}
